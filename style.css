@@ -1,0 +1,112 @@
+/* root */ 
+:root {
+    --clr-primary-Green: hsl(75, 94%, 57%);
+
+    --clr-neutral-White: hsl(0, 0%, 100%);
+    --clr-neutral-Grey: hsl(0, 0%, 20%);
+    --clr-neutral-Dark-Grey: hsl(0, 0%, 12%);
+    --clr-neutral-Off-Black: hsl(0, 0%, 8%);
+
+    --ff: 'Inter', sans-serif;  
+    --fs-body: .875rem;
+    --fs-heading: 1.375rem;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    line-height: 1.1;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    color: var(--clr-primary-Green);
+    font-style: italic;
+    margin-inline: auto;
+}
+
+a {
+    color: var(--clr-neutral-White);
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+    font-family: var(--ff);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-body);
+    color: var(--clr-neutral-White);
+    background: var(--clr-neutral-Off-Black);
+}
+
+/* text styles */
+.user-name {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-700);
+    margin-bottom: .5rem;
+}
+
+.user-location {
+    color: var(--clr-primary-Green);
+    font-weight: var(--fw-600);
+    margin-bottom: 1.25rem;
+}
+
+.list-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .7rem;
+    background: var(--clr-neutral-Grey);
+    border-radius: .3rem;
+}
+
+.list-item:hover {
+    background: var(--clr-primary-Green);
+    color: var(--clr-neutral-Off-Black);
+    transition: background .3s ease, color .3s ease;
+}
+
+/* layout styles */
+.wrapper{
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+}
+
+.profile-container {
+    width: 25em;
+    border-radius: .6rem;
+    padding: 1.75rem;
+    background: var(--clr-neutral-Dark-Grey);
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links * + *{
+    margin-top: .75rem;
+}
+
+/* general styles */
+.avatar {
+    width: 6em;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+}
